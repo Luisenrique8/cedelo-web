@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png"><meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light only">
+<title>Quiénes somos y reglamento · Cédelo pe</title>
+<meta name="description" content="Misión, visión, valores y reglamento de la comunidad Cédelo pe.">
+<style>
+:root{--tinta:#241A3D;--morado:#2F2550;--magenta:#E61E8C;--verde:#00B86B;--amarillo:#FFD400;--crema:#FAFAF7;--fondo:#F2F1EC;--linea:#E6E3DA;--suave:#6b6478}
+*{box-sizing:border-box}
+html{scroll-padding-top:84px}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--magenta)}
+.cab{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--linea)}
+.cab-in{max-width:1120px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cab img{height:38px;display:block}
+.volver{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px;text-decoration:none;color:var(--tinta);border:1px solid var(--linea);padding:8px 14px;border-radius:999px;background:#fff}
+.volver:hover{border-color:var(--magenta);color:var(--magenta)}
+.migas{max-width:1120px;margin:0 auto;padding:18px 16px 0;font-size:13.5px;color:var(--suave)}
+.migas a{color:var(--suave);text-decoration:none}.migas a:hover{color:var(--magenta)}
+.migas span{margin:0 6px}
+.titulo{max-width:1120px;margin:0 auto;padding:6px 16px 18px}
+.titulo h1{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:clamp(26px,5vw,36px);line-height:1.15;margin:0}
+.titulo p{margin:6px 0 0;color:var(--suave)}
+.chips{display:none;gap:8px;overflow-x:auto;padding:0 16px 14px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;background:#fff;border:1px solid var(--linea);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600;color:var(--tinta);text-decoration:none}
+.marco{max-width:1120px;margin:0 auto;padding:0 16px 56px;display:grid;grid-template-columns:270px 1fr;gap:24px;align-items:start}
+.menu{position:sticky;top:84px;background:#fff;border-radius:18px;box-shadow:0 1px 2px rgba(36,26,61,.08);padding:10px 0;font-size:14.5px}
+.menu h3{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);margin:12px 18px 6px}
+.menu a{display:block;padding:8px 18px;color:var(--tinta);text-decoration:none;border-left:3px solid transparent}
+.menu a:hover{background:var(--crema);color:var(--magenta)}
+.menu a.activo{border-left-color:var(--magenta);color:var(--magenta);font-weight:600;background:#fdf0f7}
+.menu hr{border:0;border-top:1px solid var(--linea);margin:8px 0}
+.card{background:#fff;border-radius:18px;box-shadow:0 1px 2px rgba(36,26,61,.08);margin-bottom:20px;overflow:hidden}
+.card-pad{padding:22px 24px}
+.card h2{font-size:20px;margin:0 0 10px}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.mv .card{margin:0;background:var(--tinta);color:#fff;padding:26px 24px;position:relative}
+.mv .card:nth-child(2){background:var(--morado)}
+.mv .eti{display:inline-block;background:var(--magenta);color:#fff;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin-bottom:12px}
+.mv .card:nth-child(2) .eti{background:var(--amarillo);color:var(--tinta)}
+.mv p{margin:0 0 14px;color:#e9e6f2}
+.mv .corta{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:21px;line-height:1.25;color:#fff;margin:0;border-top:1px solid rgba(255,255,255,.15);padding-top:14px}
+.valores{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:6px}
+.valor{border:1px solid var(--linea);border-radius:14px;padding:14px 16px;background:var(--crema)}
+.valor b{display:block;margin-bottom:4px}
+.valor span{font-size:14px;color:var(--suave);line-height:1.5}
+.lead{padding:20px 24px;border-bottom:1px solid var(--linea)}
+.lead h2{margin:0 0 4px}.lead p{margin:0;color:var(--suave)}
+details{border-bottom:1px solid var(--linea)}
+details:last-of-type{border-bottom:0}
+summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:16px 24px;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--crema)}
+.num{flex:none;width:30px;height:30px;border-radius:50%;background:#fdf0f7;color:var(--magenta);display:grid;place-items:center;font-size:14px;font-weight:700}
+summary .chev{margin-left:auto;transition:transform .2s;color:var(--suave)}
+details[open] summary .chev{transform:rotate(90deg)}
+details[open] summary{color:var(--magenta)}
+.cuerpo{padding:0 24px 18px 68px}
+.cuerpo ul,.cuerpo ol{margin:0;padding-left:20px}
+.cuerpo li{margin:6px 0}
+.cuerpo p{margin:0 0 10px}
+.prohibido{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;list-style:none;padding:0!important}
+.prohibido li{position:relative;padding-left:22px;margin:0!important}
+.prohibido li::before{content:"✕";position:absolute;left:0;color:var(--magenta);font-weight:700}
+.modos{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.modo{border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600}
+.m1{background:#e3f7ee;color:#007a47}.m2{background:#fff6cc;color:#7a6500}.m3{background:#efeaff;color:#4b3a8f}
+.regla-oro{background:#fffbe6;border:1px solid #f5e08a;border-radius:12px;padding:12px 14px;margin:0 0 12px}
+.contacto{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.contacto p{margin:0}
+.btn{display:inline-block;background:var(--magenta);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:11px 20px}
+.empresa{font-size:13.5px;color:var(--suave);text-align:center;margin:8px 0 0}
+.pie{background:var(--tinta);color:#b8b2c8;text-align:center;font-size:13.5px;padding:24px 16px}
+.pie a{color:#fff}
+@media (max-width:860px){
+  .marco{grid-template-columns:1fr}
+  .menu{display:none}
+  .chips{display:flex}
+  .mv{grid-template-columns:1fr}
+  .cuerpo{padding:0 18px 16px 18px}
+  summary{padding:15px 18px}
+  .lead,.card-pad{padding:18px}
+  .prohibido{grid-template-columns:1fr}
+  .valores{grid-template-columns:1fr 1fr;gap:10px}
+  .valor{padding:12px}
+  .volver span{display:none}
+}
+/* v17 · redes sociales en el pie */
+.pie-redes{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:2px 0}
+.pie-redes a{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:600;font-size:14px;
+  border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:999px;padding:8px 16px 8px 10px;transition:.15s}
+.pie-redes a svg{width:20px;height:20px;flex:none}
+.pie-redes a:hover{background:#E61E8C;border-color:#E61E8C;color:#fff}
+.pie .pie-redes{margin-bottom:12px}
+</style></head><body>
+
+<header class="cab"><div class="cab-in">
+  <a href="/"><img src="logo_cedelo.png" alt="Cédelo pe"></a>
+  <a class="volver" href="/">‹ <span>Volver a</span> Cédelo</a>
+</div></header>
+
+<nav class="migas"><a href="/">Inicio</a><span>›</span><a href="#mision">Ayuda</a><span>›</span>Quiénes somos y reglamento</nav>
+<div class="titulo">
+  <h1>Quiénes somos y reglamento</h1>
+  <p>Lo que nos mueve y las reglas para ceder, recibir e intercambiar con confianza.</p>
+</div>
+
+<div class="chips">
+  <a href="#mision">Misión</a><a href="#vision">Visión</a><a href="#valores">Valores</a>
+  <a href="#reglamento">Reglamento</a><a href="#r3">Prohibidos</a><a href="#r6">Entregas seguras</a><a href="#r7">Dinero</a><a href="#contacto">Contacto</a>
+</div>
+
+<div class="marco">
+  <aside class="menu" id="menu">
+    <h3>Sobre Cédelo</h3>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#valores">Valores</a>
+    <hr>
+    <h3>Reglamento</h3>
+    <a href="#r1">1. Quién puede usar Cédelo</a>
+    <a href="#r2">2. Qué puedes publicar</a>
+    <a href="#r3">3. Qué está prohibido</a>
+    <a href="#r4">4. Cómo publicar bien</a>
+    <a href="#r5">5. Trato entre vecinos</a>
+    <a href="#r6">6. Entregas seguras</a>
+    <a href="#r7">7. Dinero y delivery</a>
+    <a href="#r8">8. Moderación y sanciones</a>
+    <a href="#r9">9. Datos personales</a>
+    <a href="#r10">10. Responsabilidad</a>
+    <a href="#r11">11. Cambios al reglamento</a>
+    <hr>
+    <a href="#contacto">Contacto</a>
+  </aside>
+
+  <main>
+    <div class="mv">
+      <section class="card" id="mision">
+        <span class="eti">Misión</span>
+        <p>Conectamos a los vecinos para que lo que a uno le sobra llegue a quien le falta. Lo hacemos de forma simple, segura y cercana, donando, intercambiando o vendiendo barato. Así le damos una segunda vida a las cosas, liberamos espacio en casa y fortalecemos la confianza en el barrio.</p>
+        <p class="corta">Que nada útil se bote mientras alguien lo necesita.</p>
+      </section>
+      <section class="card" id="vision">
+        <span class="eti">Visión</span>
+        <p>Ser la comunidad de reúso más querida y confiable del Perú. Empezamos en tu distrito y queremos llegar a todo el país. Soñamos con que "cédelo pe" sea lo primero que alguien piense antes de botar algo, y con que cada barrio tenga una red de vecinos que se ayudan.</p>
+        <p class="corta">Un Perú donde las cosas circulan y no se botan.</p>
+      </section>
+    </div>
+
+    <section class="card card-pad" id="valores">
+      <h2>Valores</h2>
+      <div class="valores">
+        <div class="valor"><b>Primero lo social</b><span>Nos importa que las cosas lleguen a quien las necesita, no ganar con cada entrega.</span></div>
+        <div class="valor"><b>Confianza entre vecinos</b><span>Somos honestos al publicar, cumplimos lo que acordamos y nos tratamos con respeto.</span></div>
+        <div class="valor"><b>Cero desperdicio</b><span>Lo que todavía sirve se cede, se cambia o se vende barato antes de botarlo.</span></div>
+        <div class="valor"><b>Simplicidad</b><span>Publicar y pedir algo debe tomar menos de un minuto.</span></div>
+        <div class="valor"><b>Seguridad</b><span>Cuidamos los datos de los vecinos y promovemos entregas seguras.</span></div>
+      </div>
+    </section>
+
+    <section class="card" id="reglamento">
+      <div class="lead">
+        <h2>Reglamento de la comunidad</h2>
+        <p>Al crear una cuenta en Cédelo pe (web o app), aceptas estas reglas.</p>
+      </div>
+
+      <details id="r1"><summary><span class="num">1</span>Quién puede usar Cédelo pe<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Personas mayores de 18 años. Si eres menor, un adulto responsable debe manejar la cuenta.</li>
+        <li>Una cuenta por persona, con tu nombre real y un correo que uses.</li>
+        <li>Tu cuenta es personal. Eres responsable de lo que publiques y acuerdes desde ella.</li>
+      </ol></div></details>
+
+      <details id="r2"><summary><span class="num">2</span>Qué puedes publicar<span class="chev">›</span></summary><div class="cuerpo">
+        <p>Puedes publicar objetos físicos tuyos, en buen estado o con sus fallas bien explicadas, en una de estas tres modalidades:</p>
+        <div class="modos"><span class="modo m1">Donación · lo cedes gratis</span><span class="modo m2">Venta barata · precio justo, debajo de tienda</span><span class="modo m3">Trueque · lo cambias por otro objeto</span></div>
+      </div></details>
+
+      <details id="r3"><summary><span class="num">3</span>Qué está prohibido publicar<span class="chev">›</span></summary><div class="cuerpo"><ul class="prohibido">
+        <li>Armas, municiones, explosivos, pirotecnia y réplicas que parezcan armas reales</li>
+        <li>Drogas, medicamentos (con o sin receta), suplementos abiertos y productos médicos de un solo uso</li>
+        <li>Alcohol, cigarros y vapeadores</li>
+        <li>Animales vivos (para adopciones, coordina con un albergue)</li>
+        <li>Alimentos abiertos, caseros o vencidos</li>
+        <li>Objetos robados, falsificados o de procedencia que no puedas explicar</li>
+        <li>Documentos, placas, chips, cuentas digitales, entradas nominales y dinero</li>
+        <li>Contenido sexual, ofensivo o discriminatorio</li>
+        <li>Productos químicos peligrosos, gas o combustibles</li>
+        <li>Servicios, trabajos, rifas o publicidad de negocios</li>
+      </ul></div></details>
+
+      <details id="r4"><summary><span class="num">4</span>Cómo publicar bien<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Usa fotos reales y propias del objeto, no imágenes de internet.</li>
+        <li>Describe el estado con honestidad, incluyendo fallas, piezas faltantes o desgaste.</li>
+        <li>Haz una publicación por objeto (o por un lote claro, como "10 libros de primaria").</li>
+        <li>Si es venta, el precio debe ser justo y fijo. No lo subas cuando alguien muestre interés.</li>
+        <li>Actualiza el estado: <b>Coordinando</b> cuando ya acordaste con alguien y <b>Entregado</b> cuando se entregó. Elimina la publicación si ya no está disponible.</li>
+      </ol></div></details>
+
+      <details id="r5"><summary><span class="num">5</span>Trato entre vecinos<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Responde los mensajes con respeto, aunque la respuesta sea "ya no está disponible".</li>
+        <li>Cumple lo acordado. Si no puedes llegar a la entrega, avisa con tiempo.</li>
+        <li>No pidas donaciones para revenderlas.</li>
+        <li>No envíes spam, cadenas ni publicidad por el chat.</li>
+        <li>Prohibido el acoso, los insultos, las amenazas o pedir datos personales que no hagan falta para la entrega.</li>
+      </ol></div></details>
+
+      <details id="r6"><summary><span class="num">6</span>Entregas seguras<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Encuéntrate en lugares públicos y concurridos: una plaza, un centro comercial o la puerta de una comisaría. Hazlo de día.</li>
+        <li>Si puedes, ve acompañado y avisa a alguien de confianza dónde estarás.</li>
+        <li>Revisa el objeto antes de recibirlo.</li>
+        <li>Nunca adelantes dinero a alguien que no conoces.</li>
+        <li>Si algo te parece sospechoso, no vayas y repórtalo.</li>
+      </ol></div></details>
+
+      <details id="r7"><summary><span class="num">7</span>Dinero y delivery<span class="chev">›</span></summary><div class="cuerpo">
+        <p class="regla-oro"><b>Regla de oro:</b> Cédelo pe nunca toca tu dinero. No cobramos comisiones ni recibimos pagos por ninguna transacción.</p>
+        <ol>
+          <li>En una venta, el pago se acuerda directamente entre los vecinos (efectivo, Yape, Plin u otro medio).</li>
+          <li><b>El delivery lo paga quien recibe</b>, salvo que ambos acuerden otra cosa.</li>
+          <li>Cédelo pe no es parte de los acuerdos entre vecinos. Solo los conecta.</li>
+        </ol>
+      </div></details>
+
+      <details id="r8"><summary><span class="num">8</span>Moderación y sanciones<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>El equipo administrador puede eliminar sin aviso previo publicaciones que incumplan este reglamento.</li>
+        <li>Si las faltas se repiten o son graves (estafa, objetos prohibidos, acoso), el equipo puede eliminar la cuenta de forma definitiva.</li>
+        <li>Cédelo pe tiene <b>tolerancia cero</b> con el contenido ofensivo, abusivo o prohibido y con los usuarios que acosan o estafan.</li>
+        <li>Para reportar una publicación, un mensaje, un tema de la Comunidad o a un vecino, usa el botón <b>Reportar</b> que aparece en cada uno. También puedes <b>bloquear</b> a un vecino: ya no podrá escribirte y no verás sus publicaciones. Desbloquéalo cuando quieras desde Más → Vecinos bloqueados.</li>
+        <li>Revisamos cada reporte en menos de 24 horas. Si corresponde, eliminamos el contenido y suspendemos o eliminamos la cuenta de quien incumplió.</li>
+        <li>Para apelar una decisión, escribe a <a href="mailto:soporte@cedelo.pe?subject=Reporte">soporte@cedelo.pe</a> con el enlace o el nombre y una breve explicación.</li>
+      </ol></div></details>
+
+      <details id="r9"><summary><span class="num">9</span>Datos personales<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Tratamos tus datos según la Ley N.º 29733, Ley de Protección de Datos Personales, y nuestra <a href="privacidad.html">Política de privacidad</a>.</li>
+        <li>Solo mostramos tu nombre y tu zona. Tu correo no es público.</li>
+        <li>Puedes eliminar tu cuenta y todos tus datos cuando quieras desde <b>Cuenta → Eliminar mi cuenta</b> o en <a href="eliminar-cuenta.html">esta página</a>.</li>
+      </ol></div></details>
+
+      <details id="r10"><summary><span class="num">10</span>Responsabilidad<span class="chev">›</span></summary><div class="cuerpo"><ol>
+        <li>Cada vecino es responsable de lo que publica, entrega y recibe.</li>
+        <li>Cédelo pe no garantiza el estado de los objetos ni el cumplimiento de los acuerdos entre usuarios. Sí actúa sobre los reportes que recibe.</li>
+        <li>Ante un delito, como un robo o una estafa, haz la denuncia ante la PNP. Colaboraremos con las autoridades si nos lo solicitan.</li>
+      </ol></div></details>
+
+      <details id="r11"><summary><span class="num">11</span>Cambios a este reglamento<span class="chev">›</span></summary><div class="cuerpo">
+        <p>Podemos actualizar este reglamento. Si los cambios son importantes, los anunciaremos en la web y en la app.</p>
+        <p style="color:var(--suave);font-size:14px">Última actualización: 8 de octubre de 2026</p>
+      </div></details>
+    </section>
+
+    <section class="card card-pad" id="contacto">
+      <div class="contacto">
+        <div><h2 style="margin:0 0 4px">¿Dudas, reportes o alianzas?</h2><p>Escríbenos y te respondemos lo antes posible.</p></div>
+        <a class="btn" href="mailto:soporte@cedelo.pe">soporte@cedelo.pe</a>
+      </div>
+    </section>
+    <p class="empresa">Cédelo pe es una plataforma de Trasciende Technology S.R.L. · RUC 20616343247 · Perú</p>
+  </main>
+</div>
+
+<footer class="pie"><div class="pie-redes"><a href="https://www.instagram.com/cedelope/" target="_blank" rel="noopener" aria-label="Instagram de Cédelo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>@cedelope</span></a><a href="https://www.facebook.com/cedelope" target="_blank" rel="noopener" aria-label="Facebook de Cédelo"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z"/></svg><span>Facebook</span></a><a href="https://www.tiktok.com/@cedelope" target="_blank" rel="noopener" aria-label="TikTok de Cédelo"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v3a7.3 7.3 0 0 1-3.8-1.1v6.1c0 3.7-2.6 6.2-6 6.2a5.8 5.8 0 0 1-5.9-5.9c0-3.6 3-6.3 6.8-5.8v3.2c-1.8-.4-3.6.7-3.6 2.6 0 1.6 1.2 2.8 2.7 2.8 1.7 0 2.8-1.1 2.8-3.2V3z"/></svg><span>TikTok</span></a><a href="https://cedelo.pe" aria-label="Web de Cédelo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>cedelo.pe</span></a></div><br>Cédelo pe · Lo que a ti te sobra, a alguien le falta · <a href="privacidad.html">Privacidad</a> · <a href="mailto:soporte@cedelo.pe"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>soporte@cedelo.pe</a></footer>
+
+<script>
+// Abre la sección del reglamento al llegar por enlace (#r3, etc.)
+function abrirHash(){
+  var d = document.getElementById(location.hash.slice(1));
+  if(d && d.tagName === 'DETAILS'){ d.open = true; }
+  if(d){ setTimeout(function(){ d.scrollIntoView({block:'start'}); }, 60); }
+  marcar(location.hash);
+}
+function marcar(h){
+  document.querySelectorAll('.menu a').forEach(function(a){ a.classList.toggle('activo', a.getAttribute('href') === h); });
+}
+document.querySelectorAll('a[href^="#r"]').forEach(function(a){
+  a.addEventListener('click', function(){ var d = document.querySelector(a.getAttribute('href')); if(d && d.tagName==='DETAILS') d.open = true; });
+});
+window.addEventListener('hashchange', abrirHash);
+abrirHash();
+// La primera regla abierta por defecto si no hay enlace
+if(!location.hash){ document.getElementById('r1').open = true; }
+</script>
+</body></html>

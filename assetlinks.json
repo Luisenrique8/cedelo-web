@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "pe.cedelo.app",
+      "sha256_cert_fingerprints": [
+        "A5:D5:A3:C3:A7:A6:EA:68:9B:13:CD:03:7C:92:1B:CD:2B:84:83:C4:D0:7B:FC:7E:75:71:7B:44:4B:96:98:39",
+        "5F:04:90:B9:C2:BC:06:34:17:C0:B7:60:AF:87:A1:04:05:84:08:E1:CA:52:89:5C:15:D0:A0:66:3E:61:6D:24"
+      ]
+    }
+  }
+]
